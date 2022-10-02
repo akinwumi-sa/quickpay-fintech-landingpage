@@ -1,0 +1,659 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QuickPay - Save Money</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="font-spaceGrotesk">
+    <div
+      class="bg-[#8FE3CF] h-[825px] overflow-x-hidden px-2 md:px-8 md:h-[610px] lg:h-[750px] lg:px-12"
+    >
+      <header class="flex justify-between items-center h-20 md:h-24">
+        <div
+          class="flex items-center justify-between w-[84px] h-7 md:h-12 md:w-[100px]"
+        >
+          <img class="h-7 w-7 md:h-10 md:w-10" src="img/group 1.png" />
+          <div
+            class="text-xs md:text-xl self-center md:pt-[4px] font-bold w-12 h-4 md:h-10 text-[#002B5B]"
+          >
+            QuickPay
+          </div>
+        </div>
+        <div class="nav-menu-btn lg:hidden">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            class="w-6 h-6 md:h-10 md:w-10 text-[#002B5B]"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M3 5.25a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 5.25zm0 4.5A.75.75 0 013.75 9h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 9.75zm0 4.5a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75zm0 4.5a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75z"
+              clip-rule="evenodd"
+            />
+          </svg>
+        </div>
+        <div
+          class="nav-menu absolute w-full h-full bg-white text-[#002B5B] top-0 -left-full flex flex-col justify-center items-center z-30 transition-all ease-in duration-500 lg:flex-row lg:static lg:bg-inherit lg:h-inherit lg:w-[65%] lg:justify-between"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            class="close font-semibold close-btn h-6 w-6 md:h-10 md:w-10 text-[#002B5B] absolute top-6 right-6 lg:hidden"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M5.47 5.47a.75.75 0 011.06 0L12 10.94l5.47-5.47a.75.75 0 111.06 1.06L13.06 12l5.47 5.47a.75.75 0 11-1.06 1.06L12 13.06l-5.47 5.47a.75.75 0 01-1.06-1.06L10.94 12 5.47 6.53a.75.75 0 010-1.06z"
+              clip-rule="evenodd"
+            />
+          </svg>
+          <div class="my-2 text-2xl md:text-4xl lg:text-base font-bold">
+            <a href="#">Home</a>
+          </div>
+          <div class="my-2 text-2xl md:text-4xl lg:text-base font-bold">
+            <a href="#">Why choose QuickPay</a>
+          </div>
+          <div class="my-2 text-2xl md:text-4xl lg:text-base font-bold">
+            <a href="#">About Us</a>
+          </div>
+          <div class="my-2 text-2xl md:text-4xl lg:text-base font-bold">
+            <a href="#">Contact Us</a>
+          </div>
+          <div
+            class="my-2 text-2xl md:text-4xl md:h-14 lg:text-base bg-[white] lg:bg-inherit font-bold w-72 md:w-96 lg:w-max mx-auto lg:mx-0 h-12 lg:h-min rounded-lg lg:rounded-none flex justify-center items-center border md:border-2 border-[#002B5B] lg:border-none"
+          >
+            <a href="#">Log in</a>
+          </div>
+          <div
+            class="my-2 text-2xl md:text-4xl md:h-14 lg:text-base bg-[#002B5B] lg:bg-inherit text-white lg:text-inherit text-center font-bold w-72 md:w-96 lg:w-max mx-auto lg:mx-0 h-12 rounded-lg lg:border-2 lg:border-[#002B5B] lg:px-2 lg:h-10 lg:py-1 flex justify-center items-center"
+          >
+            <a href="#">Download App</a>
+          </div>
+        </div>
+      </header>
+      <div
+        class="mt-10 md:flex md:justify-between md:items-center md:mt-0 lg:mt-0 lg:mt-10 lg:flex lg:justify-between lg:items-center"
+      >
+        <div
+          class="flex flex-col justify-between h-[210px] md:h-60 lg:h-[300px]"
+        >
+          <div
+            class="h-[90px] mx-auto text-[#002B5B] text-4xl text-center font-bold md:text-5xl md:text-left md:mx-0 md:max-w-md lg:h-[238px] lg:text-6xl lg:text-left lg:max-w-[712px]"
+          >
+            Save money with Friends & Family
+          </div>
+          <div
+            class="text-base h-10 leading-[100%] font-normal h-10 mx-auto text-[#002B5B] text-center md:text-left md:text-lg md:leading-none md:max-w-sm md:mx-0 lg:h-[135px] lg:text-2xl lg:text-left lg:mx-0 lg:max-w-[564px]"
+          >
+            Send money to your family, friends or businesses. We pay directly
+            into Recipient’s account
+          </div>
+          <div
+            class="mt-8 mx-auto truncate bg-[#002B5B] w-48 text-white h-12 rounded-lg flex justify-center items-center font-bold md:mx-0 md:mt-0 md:w-52 lg:mt-8 lg:h-[118px] lg:w-[443px] lg:mx-0 lg:text-xl"
+          >
+            <a href="#">Get Started</a>
+          </div>
+        </div>
+        <div
+          class="relative h-[492px] md:h-[400px] md:self-center md:w-1/2 lg:w-[50%] flex flex-col"
+        >
+          <div
+            class="relative mt-20 w-[162px] h-[328px] justify-self-center mx-auto md:mt-6 lg:mt-8 md:rotate-[-5.14deg] lg:hidden"
+          >
+            <img
+              class="absolute left-2 top-[6px] right-2 z-10"
+              src="img/iPhone 12 Pro Mockup Front View label.png"
+            />
+            <img class="absolute left-0 right-0 z-0" src="img/main.png" />
+            <img class="absolute top-[11px]" src="img/shadow.png" />
+          </div>
+          <div
+            class="lg:relative lg:w-[341px] lg:h-[689px] lg:justify-self-center lg:block lg:mx-auto lg::mt-6 md:hidden sm:hidden hidden"
+          >
+            <img
+              class="lg:absolute lg:-top-6 lg:z-10"
+              src="img/iPhone 12 Pro Mockup Front View rot.png"
+            />
+          </div>
+          <div
+            class="absolute top-12 left-[26%] h-5 w-5 border-2 border-[#1fd0c1] rounded-full md:top-0"
+          ></div>
+          <div
+            class="absolute top-64 left-[12%] h-5 w-5 border-2 border-[#1fd0c1] rounded-full"
+          ></div>
+          <div
+            class="absolute top-[404px] left-[80%] h-5 w-5 border-2 border-[#1fd0c1] rounded-full"
+          ></div>
+          <div
+            class="absolute w-14 h-48 bg-[#1fd0c1] rotate-[-38.57deg] -left-[16%] top-12 rounded-[53px] md:hidden lg:hidden"
+          ></div>
+          <div
+            class="absolute w-14 h-48 bg-[#1fd0c1] rotate-[-38.57deg] -left-[14%] top-44 rounded-[53px] md:hidden lg:hidden"
+          ></div>
+          <div
+            class="absolute bg-[#1fd0c1] w-14 h-48 rotate-[38.57deg] -right-[15%] lg:-right-[10%] top-14 rounded-[53px] md:top-10"
+          ></div>
+          <div
+            class="absolute bg-[#1fd0c1] w-14 h-48 rotate-[38.57deg] -right-[15%] lg:-right-[10%] top-[184px] rounded-[53px] md:top-[168px]"
+          ></div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="hidden md:block md:px-8 md:-mt-20 md:py-4 md:bg-white md:rounded-[60px] md:w-[93%] md:text-[#002B5B] md:h-36 md:mx-auto md:flex md:justify-around lg:h-48 lg:px-12"
+    >
+      <div
+        class="md:flex md:flex-col md:justify-around md:items-center md:text-center md:w-[30%]"
+        data-aos="flip-up"
+        data-aos-duration="5000"
+      >
+        <div class="md:text-4xl md:font-extrabold lg:text-5xl">10,000+</div>
+        <div class="md:text-xl md:font-medium lg:text-2xl">Users</div>
+      </div>
+      <div
+        class="md:flex md:flex-col md:justify-around md:items-center md:text-center md:w-[30%]"
+        data-aos="flip-up"
+        data-aos-duration="5000"
+      >
+        <div class="md:text-4xl md:font-extrabold lg:text-5xl">1,000+</div>
+        <div class="md:text-xl md:font-medium lg:text-2xl">
+          New customers a week
+        </div>
+      </div>
+      <div
+        class="md:flex md:flex-col md:justify-around md:items-center md:text-center md:w-[30%]"
+        data-aos="flip-up"
+        data-aos-duration="5000"
+      >
+        <div class="md:text-4xl md:font-extrabold lg:text-5xl">5,000+</div>
+        <div class="md:text-xl md:font-medium lg:text-2xl">
+          Transitions per week
+        </div>
+      </div>
+    </div>
+    <div class="flex flex-col items-center md:px-8 lg:px-12">
+      <div
+        class="text-2xl text-[#002B5B] font-bold mt-16 mb-8 md:text-4xl md:mt-24 md:mb-12 lg:text-5xl lg:mt-36 md:mb-24"
+      >
+        Why Choose Quickpay
+      </div>
+      <div class="md:flex md:justify-between md:w-full">
+        <div
+          class="h-[335px] w-[262px] rounded-[32px] bg-[#F6FCFA] text-[#2B4865] flex flex-col items-center justify-around mb-6 md:w-[32%] md:h-80 md:px-2 lg:h-96"
+        >
+          <div
+            class="h-20 w-20 bg-[#8FE3CF] rounded-full flex justify-center items-center md:h-24 md:w-24"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-8 h-8 text-[#002B5B] md:w-9 md:h-9"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M15.75 9V5.25A2.25 2.25 0 0013.5 3h-6a2.25 2.25 0 00-2.25 2.25v13.5A2.25 2.25 0 007.5 21h6a2.25 2.25 0 002.25-2.25V15m3 0l3-3m0 0l-3-3m3 3H9"
+              />
+            </svg>
+          </div>
+          <div class="text-center">
+            <div class="text-xl font-bold md:text-2xl md:mb-1 lg:text-4xl">
+              Easy to sign up
+            </div>
+            <div class="text-xs font-medium md:text-sm lg:text-lg">
+              It is very easy to sign up on Quickpay
+            </div>
+          </div>
+          <div
+            class="flex items-center font-medium md:text-lg lg:text-xl bg-white"
+          >
+            Learn more<span class="flex flex-col justify-center items-center"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-2 h-6 text-[#002B5B] justify-self-center md:w-3 md:h-7 lg:w-4 lg:h-8"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M8.25 4.5l7.5 7.5-7.5 7.5"
+                />
+              </svg>
+            </span>
+          </div>
+        </div>
+        <div
+          class="h-[335px] w-[262px] rounded-[32px] bg-[#F6FCFA] text-[#2B4865] flex flex-col items-center justify-around mb-6 md:w-[32%] md:h-80 md:px-1 md:py-1 lg:h-96"
+        >
+          <div
+            class="h-20 w-20 bg-[#8FE3CF] rounded-full flex justify-center items-center md:h-24 md:w-24"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-8 h-8 text-[#002B5B] md:h-9 md:w-9"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z"
+              />
+            </svg>
+          </div>
+          <div class="text-center">
+            <div
+              class="text-xl font-bold md:text-2xl md:w-[99%] md:mb-1 lg:text-4xl"
+            >
+              Trusted & Legitimate
+            </div>
+            <div
+              class="text-xs font-medium w-[198px] h-8 sm:w-[98%] md:text-sm md:mx-auto md:w-[98%] lg:text-lg"
+            >
+              You dont have to worry, Quickpay is Trusted and Legitimate
+            </div>
+          </div>
+          <div class="flex items-center font-medium md:text-lg lg:text-xl">
+            Learn more<span
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-2 h-6 text-[#002B5B] self-center md:w-3 md:h-7"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M8.25 4.5l7.5 7.5-7.5 7.5"
+                />
+              </svg>
+            </span>
+          </div>
+        </div>
+        <div
+          class="h-[335px] w-[262px] rounded-[32px] bg-[#F6FCFA] text-[#2B4865] flex flex-col items-center justify-around mb-6 md:w-[32%] md:h-80 md:px-2 lg:h-96"
+        >
+          <div
+            class="h-20 w-20 bg-[#8FE3CF] rounded-full flex justify-center items-center md:h-24 md:w-24"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-8 h-8 text-[#002B5B] md:h-9 md:w-9"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M21.75 6.75a4.5 4.5 0 01-4.884 4.484c-1.076-.091-2.264.071-2.95.904l-7.152 8.684a2.548 2.548 0 11-3.586-3.586l8.684-7.152c.833-.686.995-1.874.904-2.95a4.5 4.5 0 016.336-4.486l-3.276 3.276a3.004 3.004 0 002.25 2.25l3.276-3.276c.256.565.398 1.192.398 1.852z"
+              />
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M4.867 19.125h.008v.008h-.008v-.008z"
+              />
+            </svg>
+          </div>
+          <div class="text-center">
+            <div class="text-xl font-bold md:text-2xl md:mb-1 lg:text-4xl">
+              24/7 Support
+            </div>
+            <div
+              class="text-xs font-medium w-[198px] h-8 md:text-sm lg:text-lg lg:w-[80%] lg:mx-auto"
+            >
+              Quickpay customer support are always ready to help you
+            </div>
+          </div>
+          <div class="flex items-center font-medium md:text-lg lg:text-xl">
+            Learn more<span
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-2 h-6 text-[#002B5B] justify-self-center md:w-3 md:h-7"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M8.25 4.5l7.5 7.5-7.5 7.5"
+                />
+              </svg>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="flex flex-col items-center mt-4 lg:mt-12 lg:mb-20 md:flex-row md:px-8 lg:px-12"
+    >
+      <div class="flex flex-col items-center lg:w-[50%]">
+        <div
+          class="text-2xl text-[#002b5b] font-extrabold mb-4 md:text-4xl md:text-left md:self-start lg:text-6xl lg:text-left"
+        >
+          About Quickpay
+        </div>
+        <div
+          class="text-xs font-medium w-[90%] h-11 text-[#002B5B] md:text-sm md:w-[314px] md:mx-auto lg:text-xl lg:w-[600px]"
+        >
+          Quickpay is a platform that allows you save money with friends &
+          family. It allows you send money to your family, friends or business
+          easily, fast and efficiently.
+        </div>
+      </div>
+      <div class="w-full lg:w-[50%]">
+        <div class="relative h-[492px] flex flex-col">
+          <div
+            class="relative mt-20 w-[162px] h-[328px] justify-self-center mx-auto rotate-[-3.14deg] lg:hidden"
+          >
+            <img
+              class="absolute left-2 top-[6px] right-2 z-10"
+              src="img/iPhone 12 Pro Mockup Front View label.png"
+            />
+            <img class="absolute left-0 right-0 z-0" src="img/main.png" />
+            <img class="absolute top-[11px]" src="img/shadow.png" />
+          </div>
+          <div
+            class="lg:relative lg:w-[341px] lg:h-[689px] lg:justify-self-center lg:block lg:mx-auto lg::mt-6 md:hidden sm:hidden hidden"
+          >
+            <img
+              class="lg:absolute lg:z-10"
+              src="img/iPhone 12 Pro Mockup Front View rot.png"
+            />
+          </div>
+          <div
+            class="absolute top-24 right-[16%] h-5 w-5 border-2 border-[#002b5b] rounded-full"
+          ></div>
+          <div
+            class="absolute top-64 left-[15%] h-5 w-5 border-2 border-[#002b5b] rounded-full"
+          ></div>
+          <div
+            class="absolute top-80 right-[11%] h-5 w-5 border-2 border-[#002b5b] rounded-full"
+          ></div>
+        </div>
+      </div>
+    </div>
+    <div class="flex flex-col md:px-8 lg:px-12">
+      <div
+        class="h-48 mx-2 rounded-lg bg-[#ABE8D9] flex flex-col justify-around items-center md:mx-4 md:h-52 lg:h-64"
+      >
+        <div
+          class="w-[271px] h-10 text-lg text-[#002B5B] font-extrabold text-center md:text-2xl md:w-[70%] lg:text-4xl lg:w-[60%]"
+        >
+          To get our Update, Subscribe to our Newsletter
+        </div>
+        <div
+          class="flex items-center justify-between h-9 bg-white md:h-10 md:w-[50%] lg:w-[55%] lg:h-12 lg:bg-white rounded-br-lg"
+        >
+          <input
+            class="input-out h-9 px-2 placeholder-text-lg md:h-10 md:w-[70%] lg:h-12"
+            type="text"
+            placeholder="Enter your e-mail"
+          /><input
+            class="bg-[#002B5B] text-white text-xs px-3 h-9 rounded-lg md:h-10 md:w-[30%] lg:text-base lg:h-12"
+            type="submit"
+            value="Get Started"
+          />
+        </div>
+      </div>
+      <div
+        class="self-end w-8 h-8 bg-[#ABE8D9] mt-7 rounded-full flex justify-center items-center text-[#002B5B]"
+      >
+        <a href="#"
+          ><svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-6 h-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M8.25 6.75L12 3m0 0l3.75 3.75M12 3v18"
+            /></svg
+        ></a>
+      </div>
+    </div>
+    <footer
+      class="md:relative mb-10 flex flex-col justify-between mt-12 h-72 px-4 md:h-52 lg:h-64 md:px-8 lg:px-12"
+    >
+      <div class="md:flex">
+        <div class="md:w-[30%]">
+          <div
+            class="flex items-center justify-between w-[84px] h-7 md:h-12 md:w-[100px]"
+          >
+            <img class="h-7 w-7 md:h-10 md:w-10" src="img/group 1.png" />
+            <label
+              class="text-sm font-bold leading-3 w-12 h-4 text-[#002B5B] md:h-10 md:text-xl md:pt-[4px]"
+              >QuickPay</label
+            >
+          </div>
+        </div>
+        <div
+          class="text-[#2B4865] text-xs lg:text-sm flex justify-around md:w-[70%] mt-4"
+        >
+          <ul class="flex flex-col justify-between">
+            <li class="text-sm font-extrabold md:text-xl lg:text-2xl">About</li>
+            <li class="mt-2">About Quickpay</li>
+            <li>Fees</li>
+            <li>Multi-jurisdictional licenses</li>
+            <li>Careers</li>
+            <li>Terms of service</li>
+          </ul>
+          <ul class="flex flex-col justify-between">
+            <li class="text-sm font-extrabold md:text-xl lg:text-2xl">Help</li>
+            <li class="mt-2">Customer Care</li>
+            <li>Contact us</li>
+            <li>Security center</li>
+            <li>Customer Assistance</li>
+            <li>Disclosure policies</li>
+          </ul>
+        </div>
+      </div>
+      <div class="md:absolute md:top-16 md:left-12 flex justify-between w-28">
+        <div
+          class="h-5 w-5 rounded-full border-2 border-[#002B5B] flex justify-center items-center"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            x="0px"
+            y="0px"
+            width="12"
+            height="12"
+            viewBox="0 0 172 172"
+            style="fill: #000000"
+          >
+            <g
+              fill="none"
+              fill-rule="nonzero"
+              stroke="none"
+              stroke-width="1"
+              stroke-linecap="butt"
+              stroke-linejoin="miter"
+              stroke-miterlimit="10"
+              stroke-dasharray=""
+              stroke-dashoffset="0"
+              font-family="none"
+              font-weight="none"
+              font-size="none"
+              text-anchor="none"
+              style="mix-blend-mode: normal"
+            >
+              <path d="M0,172v-172h172v172z" fill="none"></path>
+              <g fill="#002b5b">
+                <path
+                  d="M110.08,37.84h17.2c1.89888,0 3.44,-1.54112 3.44,-3.44v-23.17528c0,-1.80256 -1.38632,-3.3024 -3.182,-3.42968c-5.47304,-0.38872 -16.16456,-0.91504 -23.85296,-0.91504c-21.12504,0 -34.88504,12.6592 -34.88504,35.66592v22.81408h-24.08c-1.89888,0 -3.44,1.54112 -3.44,3.44v24.08c0,1.89888 1.54112,3.44 3.44,3.44h24.08v65.36c0,1.89888 1.54112,3.44 3.44,3.44h24.08c1.89888,0 3.44,-1.54112 3.44,-3.44v-65.36h24.84368c1.7544,0 3.22672,-1.31752 3.41936,-3.0616l2.67632,-24.08c0.22704,-2.03648 -1.36912,-3.8184 -3.41936,-3.8184h-27.52v-17.2c0,-5.70008 4.61992,-10.32 10.32,-10.32z"
+                ></path>
+              </g>
+            </g>
+          </svg>
+        </div>
+        <div
+          class="h-5 w-5 rounded-full border-2 border-[#002B5B] flex justify-center items-center"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            x="0px"
+            y="0px"
+            width="12"
+            height="12"
+            viewBox="0 0 172 172"
+            style="fill: #000000"
+          >
+            <g
+              fill="none"
+              fill-rule="nonzero"
+              stroke="none"
+              stroke-width="1"
+              stroke-linecap="butt"
+              stroke-linejoin="miter"
+              stroke-miterlimit="10"
+              stroke-dasharray=""
+              stroke-dashoffset="0"
+              font-family="none"
+              font-weight="none"
+              font-size="none"
+              text-anchor="none"
+              style="mix-blend-mode: normal"
+            >
+              <path d="M0,172v-172h172v172z" fill="none"></path>
+              <g fill="#002b5b">
+                <path
+                  d="M55.04,10.32c-24.6648,0 -44.72,20.0552 -44.72,44.72v61.92c0,24.6648 20.0552,44.72 44.72,44.72h61.92c24.6648,0 44.72,-20.0552 44.72,-44.72v-61.92c0,-24.6648 -20.0552,-44.72 -44.72,-44.72zM127.28,37.84c3.784,0 6.88,3.096 6.88,6.88c0,3.784 -3.096,6.88 -6.88,6.88c-3.784,0 -6.88,-3.096 -6.88,-6.88c0,-3.784 3.096,-6.88 6.88,-6.88zM86,48.16c20.8808,0 37.84,16.9592 37.84,37.84c0,20.8808 -16.9592,37.84 -37.84,37.84c-20.8808,0 -37.84,-16.9592 -37.84,-37.84c0,-20.8808 16.9592,-37.84 37.84,-37.84zM86,55.04c-17.0624,0 -30.96,13.8976 -30.96,30.96c0,17.0624 13.8976,30.96 30.96,30.96c17.0624,0 30.96,-13.8976 30.96,-30.96c0,-17.0624 -13.8976,-30.96 -30.96,-30.96z"
+                ></path>
+              </g>
+            </g>
+          </svg>
+        </div>
+        <div
+          class="h-5 w-5 rounded-full border-2 border-[#002B5B] flex justify-center items-center"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            x="0px"
+            y="0px"
+            width="12"
+            height="12"
+            viewBox="0 0 172 172"
+            style="fill: #000000"
+          >
+            <g
+              fill="none"
+              fill-rule="nonzero"
+              stroke="none"
+              stroke-width="1"
+              stroke-linecap="butt"
+              stroke-linejoin="miter"
+              stroke-miterlimit="10"
+              stroke-dasharray=""
+              stroke-dashoffset="0"
+              font-family="none"
+              font-weight="none"
+              font-size="none"
+              text-anchor="none"
+              style="mix-blend-mode: normal"
+            >
+              <path d="M0,172v-172h172v172z" fill="none"></path>
+              <g fill="#002b5b">
+                <path
+                  d="M161.25,35.44141c-5.62695,2.43555 -11.2959,4.24121 -17.55273,4.8291c6.25683,-3.61133 11.2959,-9.7002 13.77344,-16.33496c-6.25684,3.61132 -12.51368,6.04688 -19.4004,7.26465c-6.29882,-6.04687 -14.44531,-9.7002 -23.22168,-9.7002c-16.92285,0 -30.73828,13.35352 -30.73828,29.73047c0,2.39355 0,4.8291 0.62989,6.67676c-32.33399,0 -54.50586,-18.22461 -69.53906,-36.40723c-3.14942,4.24121 -4.40919,9.7002 -4.40919,15.15918c0,10.28809 5.66895,19.4004 13.81544,24.85938c-5.03906,-0.58789 -10.03614,-1.80566 -13.81544,-3.61132c0,0 0,0 0,0.58789c0,14.57129 10.66602,26.66504 24.48145,29.10059c-2.51953,0.58789 -5.03906,1.21777 -8.18848,1.21777c-1.84766,0 -3.7373,0 -5.62695,-0.5879c3.77929,12.13575 21.29004,26.07716 35.06348,26.07716c-10.66602,7.85253 -20.57618,14.69726 -40.39649,14.69726c-2.51953,0 -0.50391,0 -5.375,0c13.77344,8.48243 30.1084,10.75 47.03125,10.75c57.06739,0 87.80567,-45.47754 87.80567,-84.9082c0,-1.21778 0,-2.39356 0,-3.61133c6.25683,-4.2832 11.2959,-9.7002 15.66308,-15.78906"
+                ></path>
+              </g>
+            </g>
+          </svg>
+        </div>
+        <div
+          class="h-5 w-5 rounded-full border-2 border-[#002B5B] flex justify-center items-center"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            x="0px"
+            y="0px"
+            width="12"
+            height="12"
+            viewBox="0 0 172 172"
+            style="fill: #000000"
+          >
+            <g
+              fill="none"
+              fill-rule="nonzero"
+              stroke="none"
+              stroke-width="1"
+              stroke-linecap="butt"
+              stroke-linejoin="miter"
+              stroke-miterlimit="10"
+              stroke-dasharray=""
+              stroke-dashoffset="0"
+              font-family="none"
+              font-weight="none"
+              font-size="none"
+              text-anchor="none"
+              style="mix-blend-mode: normal"
+            >
+              <path d="M0,172v-172h172v172z" fill="none"></path>
+              <g fill="#002b5b">
+                <path
+                  d="M27.52,10.35359c-11.9368,0 -20.60641,7.15332 -20.60641,16.99172c0,9.8728 8.87601,17.34109 20.60641,17.34109c11.9368,0 20.6064,-7.29145 20.6064,-17.54265c-0.5504,-9.8728 -9.048,-16.79016 -20.6064,-16.79016zM10.32,51.6c-1.892,0 -3.44,1.548 -3.44,3.44v99.76c0,1.892 1.548,3.44 3.44,3.44h34.4c1.892,0 3.44,-1.548 3.44,-3.44v-99.76c0,-1.892 -1.548,-3.44 -3.44,-3.44zM61.92,51.6c-1.892,0 -3.44,1.548 -3.44,3.44v99.76c0,1.892 1.548,3.44 3.44,3.44h30.96c1.89888,0 3.44,-1.54112 3.44,-3.44v-51.6v-0.86v-0.86c0,-8.1528 6.26295,-14.79361 14.24375,-15.41281c0.4128,-0.0688 0.82345,-0.06719 1.23625,-0.06719c0.4128,0 0.82345,-0.00161 1.23625,0.06719c7.9808,0.6192 14.24375,7.26001 14.24375,15.41281v53.32c0,1.89888 1.54112,3.44 3.44,3.44h30.96c1.892,0 3.44,-1.548 3.44,-3.44v-58.48c0,-22.2568 -11.94002,-44.72 -38.56563,-44.72c-12.1088,0 -21.25597,4.6792 -26.79437,8.5664v-5.1264c0,-1.892 -1.548,-3.44 -3.44,-3.44z"
+                ></path>
+              </g>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="text-[#002B5B] text-xs md:mt-4">
+        <div class="h-[2px] w-full bg-[#002B5B]"></div>
+        <div class="text-center mt-2">
+          Copyright @ 2022 Quickpay. All rights Reserved.
+        </div>
+        <div class="text-center mt-2">
+          Designed by
+          <a
+            class="font-bold underline"
+            href="https://www.behance.net/Olaegbe_Victor"
+            target="_blank"
+            >SmartyVic</a
+          >
+        </div>
+        <div class="text-center">
+          Implemented by
+          <a
+            class="font-bold underline"
+            href="https://github.com/akinwumi-sa"
+            target="_blank"
+            >akinwumi-sa</a
+          >
+        </div>
+      </div>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="index.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
